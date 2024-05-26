@@ -20,19 +20,34 @@ h1 {
 }
 
 form {
-  padding: 30px;
-  background-color: #fcf8f3;
-  border-radius: 10px;
   display: flex;
-  box-shadow: 0px 20px 60px rgba(49, 49, 49, 0.4);
-  margin-bottom: 30px;
 }
 
 footer {
   text-align: center;
   font-size: 13px;
-  margin-top: 30px;
   color: #fcf8f3;
+}
+
+.form-container {
+  padding: 15px 20px;
+  background-color: #fcf8f3;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(49, 49, 49, 0.4);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
+  padding-left: 17px;
+}
+
+.hidden {
+  display: none;
 }
 
 .container {
@@ -49,17 +64,16 @@ footer {
   line-height: 20px;
   color: #1c3854;
   background-color: #fcf8f3;
-
 }
 
 .submit-button {
   margin-left: 10px;
-  background-color: #496988;
   color: #fcf8f3;
   border: none;
   border-radius: 50px;
   padding: 14px 24px;
   width: 150px;
+  background-color: #496988;
   font-size: 16px;
 }
 
@@ -76,3 +90,19 @@ footer {
 .poem strong {
   color: #698474;
 }
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
